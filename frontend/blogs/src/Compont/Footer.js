@@ -1,0 +1,18 @@
+import React from 'react'
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import CopyrightIcon from "@material-ui/icons/Copyright";
+
+export const Footer = () => {
+  return (
+    <div className="footer text-center ">
+      <span style={{ fontSize: "13px", color: "black" }}>
+        <CopyrightIcon style={{ fontSize: "18px", color: "black" }} />
+        <span className="footer-text"> 2021 Blogs keeper made with </span>
+        <FavoriteIcon
+          className="heartbeat"
+          style={{ fontSize: "18px", color: "red" }}
+        />
+      </span>
+    </div>
+  )
+}
