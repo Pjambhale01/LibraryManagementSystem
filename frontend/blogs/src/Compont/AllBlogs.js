@@ -13,7 +13,7 @@ function AllBlogs( props) {
     return (
         <div>       
           
-            <h2 style={{marginLeft:'400px'}}>All Blogs are hear!!!!</h2>
+            <h2 style={{marginLeft:'400px'}}>All Books are hear!!!!</h2>
             <ul>
             {allBlogs?.map((i)=> 
             <div className='blogCards'>

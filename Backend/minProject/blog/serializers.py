@@ -17,6 +17,7 @@ class UserSerializers(serializers.ModelSerializer):
     # def get_first_name(self,obj):
     #     return obj.username.capitalize()
 
+
 class BlogSerializers(serializers.ModelSerializer):
 
     class Meta:

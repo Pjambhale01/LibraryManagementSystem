@@ -14,14 +14,10 @@ function Header(props) {
         <div>
             <div>
                 <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand to='/'>Blogs
-                     <i class="material-icons">wifi_tethering</i>
+                    <Navbar.Brand to='/'>Library Management System
                     </Navbar.Brand>
-                    <Nav >
-                        <Nav.Link href="/">Home</Nav.Link>
-                       
-                        <Nav.Link href="/login">Login</Nav.Link>
-                        
+                    <Nav > 
+                        <Nav.Link href="/login">Login</Nav.Link> 
                     </Nav>
                 </Navbar>
 

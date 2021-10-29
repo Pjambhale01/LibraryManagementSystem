@@ -56,8 +56,8 @@ export function LoggedUser(props) {
             <div style={{float:'right',marginRight:'10px',cursor:'pointer'}}>
             {login && <Avatar onClick={handlProfile}  src="/broken-image.jpg" />}
             </div>
-            <Button style={{marginLeft:'450px'}} onClick={handleAllblock}  variant="primary">All Blogs</Button>
-            <Button style={{marginLeft:'5px'}} onClick={handleUserblock} variant="secondary">Users Blogs</Button>
+            <Button style={{marginLeft:'450px'}} onClick={handleAllblock}  variant="primary">All Books</Button>
+            <Button style={{marginLeft:'5px'}} onClick={handleUserblock} variant="secondary">Users Books</Button>
             {user && <Profile/>}
             {showBlog && <AllBlogs/>}
             {userBlog && <UsersBlogs/>}

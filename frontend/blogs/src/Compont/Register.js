@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {Form ,Button} from 'react-bootstrap'
 import { useDispatch, useSelector} from 'react-redux'
+import { Link } from 'react-router-dom'
 import {userRegister} from '../Action/RegisterAction'
 export function Register(props){
     const {history} = props
@@ -76,6 +77,9 @@ export function Register(props){
                 <Button style={{marginLeft:'150px'}} variant="primary" type="submit">
                     Submit
                 </Button>
+                <Link to="/login" style={{ color: "blue" ,marginLeft:'15px'}}>
+                            Login
+                    </Link>
             </Form>
         </div>
     )

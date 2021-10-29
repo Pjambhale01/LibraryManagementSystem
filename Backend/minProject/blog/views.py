@@ -21,6 +21,7 @@ def getAlluser(request):
 
 @api_view(['POST'])
 # @authentication_classes([TokenAuthentication])
+
 def LoginUser(request):
     try:
         data = request.data
@@ -40,9 +41,7 @@ def LoginUser(request):
         message = {'detail': "User with this Username doesn't exist"}
         return Response(message, status=401)
 
-
 @api_view(['POST'])
-
 def Registeruser(request):
     password = request.data["password"]
     serializer = UserSerializers(data={**request.data, "password":make_password(password)})
@@ -107,5 +106,4 @@ def editblog(request,id):
     else:
         return Response(serializer.errors,status=400)
     return Response(serializer.data ,status=200)    
-
 

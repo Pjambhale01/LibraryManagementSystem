@@ -19,7 +19,7 @@ function Userblogs(props){
     }
     return(
         <div>
-           <h2 style={{marginLeft:'400px'}}>{userInfo.user.username} Well come to yours blogs...</h2>
+           <h2 style={{marginLeft:'400px'}}>{userInfo.user.username} See Your All Books Here</h2>
            <ul>
             {userBlogs?.map((i)=> 
             <div className='blogCards'>

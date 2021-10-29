@@ -26,11 +26,12 @@ function Editblogs(props) {
         setUser({ ...user, [e.target.name]: e.target.value })
 
     }
-    console.log(user, 'hdbcksdbkac')
+    
     return (
         <div className="Registerblock">
             <h1 style={{marginLeft:'150px'}}>this is For Edit</h1>
             <Form className="register-box" onSubmit={handleSubmit}>
+                
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label><b>Title</b></Form.Label>
                     <Form.Control style={{ width: '400px' }}
@@ -48,10 +49,11 @@ function Editblogs(props) {
                         placeholder="discription"
                         onChange={handlEdit}
                     />
-                </Form.Group>
+                 </Form.Group>
                 <Button style={{marginLeft:'150px'}} variant="primary" type="submit">
                     Submit
                 </Button>
+               
             </Form>
 
 

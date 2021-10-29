@@ -3,10 +3,10 @@ import axios from 'axios'
 
 export const userBlogs=(userInfo)=> async(dispatch) =>{
     try{
-        dispatch({
-            type:'REFRESH_REGISTER_ERROR',
-            payload:null
-        })
+        // dispatch({
+        //     type:'REFRESH_REGISTER_ERROR',
+        //     payload:null
+        // })
         const config = {
             headers:{
                 "Authorization" : `Bearer ${userInfo.token}` ,
@@ -77,6 +77,7 @@ export const setUserBlogtoken = ()=> async (dispatch)=>{
         type:"REFRESH_USERBLOGS",
         payload:setToken
     })
+    
 }
 
 // export const EdituserBlogs = (item,id,userInfo) => async (dispatch)=>{
